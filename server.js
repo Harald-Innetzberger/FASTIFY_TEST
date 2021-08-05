@@ -13,7 +13,7 @@ fastify.register(require('point-of-view'), {
 });
 fastify.register(require('./routes/items'));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // run the server
 const start = async () => {
